@@ -132,6 +132,10 @@ if has("cscope")
     nmap <C-@><C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 
 
+	" update cscope database
+	"
+	nmap <F5> :!cscope -Rbq<CR>:cs reset<CR><CR>
+
     """"""""""""" key map timeouts
     "
     " By default Vim will only wait 1 second for each keystroke in a mapping.
